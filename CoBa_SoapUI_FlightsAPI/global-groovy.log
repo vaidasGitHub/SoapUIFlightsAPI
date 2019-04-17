@@ -1,0 +1,41 @@
+2019-04-03 19:54:40,349 INFO  [log] 123
+2019-04-03 19:54:40,350 INFO  [log] 18310
+2019-04-03 19:54:40,351 INFO  [log] 123
+2019-04-03 19:54:40,351 INFO  [log] 18310
+2019-04-03 19:54:40,352 INFO  [log] 123
+2019-04-03 19:54:40,352 INFO  [log] 18310
+2019-04-03 19:54:40,353 INFO  [log] 123
+2019-04-03 19:54:40,353 INFO  [log] 18310
+2019-04-03 19:54:40,354 INFO  [log] 123
+2019-04-03 19:54:40,354 INFO  [log] 18310
+2019-04-03 19:54:40,356 INFO  [log] 123
+2019-04-03 19:54:40,356 INFO  [log] 18310
+2019-04-03 19:54:40,357 INFO  [log] 123
+2019-04-03 19:54:40,357 INFO  [log] 18310
+2019-04-03 19:54:40,381 INFO  [log] Test passed.
+2019-04-03 19:54:40,411 INFO  [log] Order number is 199 with total price of 246
+2019-04-03 19:54:40,424 INFO  [log] Test passed.
+2019-04-03 20:41:52,080 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:41:52,084 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:41:52,086 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:41:52,088 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:41:52,089 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:41:52,091 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:41:52,092 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:41:52,115 INFO  [log] Test passed.
+2019-04-03 20:41:52,139 INFO  [log] Order number is 212 with total price of 246
+2019-04-03 20:41:52,154 INFO  [log] Test passed.
+2019-04-03 20:51:29,713 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:51:29,720 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:51:29,721 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:51:29,724 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:51:29,726 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:51:29,727 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:51:29,728 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-03 20:51:29,754 INFO  [log] Test passed.
+2019-04-03 20:51:29,777 INFO  [log] Order number is 215 with total price of 246
+2019-04-03 20:51:29,790 INFO  [log] Test passed.
+2019-04-04 14:14:24,562 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-04 14:14:24,662 INFO  [log] Test passed.
+2019-04-04 14:14:24,756 INFO  [log] Order number is 252 with total price of 246
+2019-04-04 14:14:24,779 INFO  [log] Test passed.
