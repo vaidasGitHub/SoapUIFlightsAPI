@@ -26,7 +26,7 @@ public class testRunner {
 			WsdlTestCase testCase = testSuite.getTestCaseAt(i);
 			TestRunner testRunner = testCase.run( new PropertiesMap() , false);
 			
-			Assert.assertEquals( Status.FINISHED, testRunner.getStatus() );
+			Assert.assertEquals( Status.FINISHED.toString(), testRunner.getStatus().toString() );
 		}
 	}
 	

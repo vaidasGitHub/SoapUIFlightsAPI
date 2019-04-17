@@ -39,3 +39,11 @@
 2019-04-04 14:14:24,662 INFO  [log] Test passed.
 2019-04-04 14:14:24,756 INFO  [log] Order number is 252 with total price of 246
 2019-04-04 14:14:24,779 INFO  [log] Test passed.
+2019-04-17 15:27:46,543 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-17 15:27:46,570 INFO  [log] Test passed.
+2019-04-17 15:27:46,649 INFO  [log] Order number is null with total price of null
+2019-04-17 15:27:46,649 INFO  [log] Test passed.
+2019-04-17 15:28:54,202 INFO  [log] Flight number is 18310 with single price of 123
+2019-04-17 15:28:54,241 INFO  [log] Test passed.
+2019-04-17 15:28:54,263 INFO  [log] Order number is null with total price of null
+2019-04-17 15:28:54,263 INFO  [log] Test passed.
