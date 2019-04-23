@@ -488,7 +488,7 @@ import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext;
 //declare variables getFlightRequest
 testRunner.testCase.setPropertyValue( "departureCity", "Frankfurt" );
 testRunner.testCase.setPropertyValue( "arrivalCity", "Denver" );
-testRunner.testCase.setPropertyValue( "flightDate", "2019-04-11" );
+testRunner.testCase.setPropertyValue( "flightDate", "2019-12-31" );
 def propDepartureCity = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "departureCity" );
 def propArrivalCity = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "arrivalCity" );
 def propFlightDate = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "flightDate" );
@@ -501,7 +501,7 @@ testRunner.testCase.setPropertyValue( "flightNumber", "" );
 testRunner.testCase.setPropertyValue( "numberOfTickets", "1" );
 def propClass = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "class" );
 def propCustomerName = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "customerName" );
-def propDepartureDate = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "departureDate" );
+def propDepartureDate = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "flightDate" );
 def propFlightNumber = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "flightNumber" );
 def propNumberOfTickets = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "numberOfTickets" );
 def propOrderNumber;
@@ -532,7 +532,7 @@ def res_getFlightRequest = testRunner.testCase.getTestStepByName( "getFlightRequ
  	//log.info( strPropPrice );
  	//log.info( propFlightNumberTransfer );
 
- 	if( intPropPrice > 105 &amp;&amp; intPropPrice &lt; 130 ){
+ 	if( intPropPrice > 110 &amp;&amp; intPropPrice &lt; 114 ){
  		propFlightNumber = propFlightNumberTransfer;
  		log.info( "Flight number is " + propFlightNumber + " with single price of " + strPropPrice);
  	}
@@ -543,7 +543,7 @@ def res_getFlightRequest = testRunner.testCase.getTestStepByName( "getFlightRequ
  if( testStepResult == "OK" ){ log.info( "Test passed." ); }
  else{ log.info( "Test failed." ); }
  //validate flight number
- assert( propFlightNumber == "18310" );
+ assert( propFlightNumber == "17707" );
 //----------------------------------------------------------------------------------------------------------------------------------
 //prepare request createFlightOrderRequest
 def req_createFlightOrderRequest = testRunner.testCase.getTestStepByName( "createFlightOrderRequest" ).getPropertyValue( "Request" );
@@ -573,7 +573,7 @@ def res_createFlightOrderRequest = testRunner.testCase.getTestStepByName( "creat
  if( testStepResult2 == "OK" ){ log.info( "Test passed." ); }
  else{ log.info( "Test failed." ); }
  //validate flight price
- assert( propTotalPrice == "246" );</script></con:config></con:testStep><con:testStep type="properties" name="TestDataVariables" id="1b02e0eb-7b43-40f8-8445-66f5665119e1"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>departureCity</con:name><con:value>Frankfurt</con:value></con:property><con:property><con:name>arrivalCity</con:name><con:value>Denver</con:value></con:property><con:property><con:name>flightDate</con:name><con:value>2019-04-11</con:value></con:property><con:property><con:name>flightNumber</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="request" id="307e5ab0-9d2b-44ea-9de1-144649cb5741" name="getFlightRequest"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FlightsServiceMethods</con:interface><con:operation>GetFlights</con:operation><con:request name="getFlightRequest" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="f16fc778-8cdf-4f18-b158-1515afd97068"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">
+ assert( propTotalPrice == "222" );</script></con:config></con:testStep><con:testStep type="properties" name="TestDataVariables" id="1b02e0eb-7b43-40f8-8445-66f5665119e1"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>departureCity</con:name><con:value>Frankfurt</con:value></con:property><con:property><con:name>arrivalCity</con:name><con:value>Denver</con:value></con:property><con:property><con:name>flightDate</con:name><con:value>2019-12-31</con:value></con:property><con:property><con:name>flightNumber</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="request" id="307e5ab0-9d2b-44ea-9de1-144649cb5741" name="getFlightRequest"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FlightsServiceMethods</con:interface><con:operation>GetFlights</con:operation><con:request name="getFlightRequest" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="f16fc778-8cdf-4f18-b158-1515afd97068"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">
    <soapenv:Header/>
    <soapenv:Body>
       <hp:GetFlights>
@@ -582,7 +582,7 @@ def res_createFlightOrderRequest = testRunner.testCase.getTestStepByName( "creat
          <!--Optional:-->
          <hp:ArrivalCity>Denver</hp:ArrivalCity>
          <!--Optional:-->
-         <hp:FlightDate>2019-04-11</hp:FlightDate>
+         <hp:FlightDate>2019-12-31</hp:FlightDate>
       </hp:GetFlights>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="88e02968-5e9b-489b-a423-548a24a22690" name="SOAP Response"/><con:assertion type="XQuery Match" id="d3605d1a-0bc7-44a7-aa4e-a56a9e9c419d" name="XQuery Match"><con:configuration><path>declare namespace ns1='HP.SOAQ.SampleApp';
@@ -594,13 +594,15 @@ for $x in //ns1:GetFlightsResponse/ns1:GetFlightsResult/ns1:Flight
 return &lt;Price>{data($x/ns1:Price)}&lt;/Price>
 }
 &lt;/Result></path><content><![CDATA[<Result>
-  <Price>123</Price>
-  <Price>100.2</Price>
-  <Price>100.2</Price>
-  <Price>161.8</Price>
+  <Price>111</Price>
+  <Price>170.47</Price>
+  <Price>106.2</Price>
+  <Price>114.6</Price>
+  <Price>172.47</Price>
+  <Price>162.4</Price>
+  <Price>165.2</Price>
+  <Price>161.4</Price>
   <Price>162.3</Price>
-  <Price>161.6</Price>
-  <Price>163.8</Price>
 </Result>
 
 
@@ -639,10 +641,10 @@ for ( item in holder.getDomNodes )
          <hp:FlightOrder>
             <hp:Class>Business</hp:Class>
             <hp:CustomerName>profi.com AG</hp:CustomerName>
-            <hp:DepartureDate>2019-04-11</hp:DepartureDate>
-            <hp:FlightNumber>18310</hp:FlightNumber>
+            <hp:DepartureDate>2019-12-31</hp:DepartureDate>
+            <hp:FlightNumber>17707</hp:FlightNumber>
             <hp:NumberOfTickets>1</hp:NumberOfTickets>
          </hp:FlightOrder>
       </hp:CreateFlightOrder>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f4cfce4d-b8f4-48be-b850-86daf5622a91" name="SOAP Response"/><con:assertion type="Simple Contains" id="c044f427-ac45-431c-b4f5-d4f42cfcc3c2" name="Contains"><con:configuration><token>246</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/CreateFlightOrder"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>departureCity</con:name><con:value>Frankfurt</con:value></con:property><con:property><con:name>arrivalCity</con:name><con:value>Denver</con:value></con:property><con:property><con:name>flightDate</con:name><con:value>2019-04-11</con:value></con:property><con:property><con:name>class</con:name><con:value>Business</con:value></con:property><con:property><con:name>customerName</con:name><con:value>profi.com AG</con:value></con:property><con:property><con:name>departureDate</con:name><con:value>2019-04-11</con:value></con:property><con:property><con:name>flightNumber</con:name><con:value/></con:property><con:property><con:name>numberOfTickets</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f4cfce4d-b8f4-48be-b850-86daf5622a91" name="SOAP Response"/><con:assertion type="Simple Contains" id="c044f427-ac45-431c-b4f5-d4f42cfcc3c2" name="Contains"><con:configuration><token>222</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/CreateFlightOrder"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>departureCity</con:name><con:value>Frankfurt</con:value></con:property><con:property><con:name>arrivalCity</con:name><con:value>Denver</con:value></con:property><con:property><con:name>flightDate</con:name><con:value>2019-12-31</con:value></con:property><con:property><con:name>class</con:name><con:value>Business</con:value></con:property><con:property><con:name>customerName</con:name><con:value>profi.com AG</con:value></con:property><con:property><con:name>departureDate</con:name><con:value>2019-12-31</con:value></con:property><con:property><con:name>flightNumber</con:name><con:value/></con:property><con:property><con:name>numberOfTickets</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
