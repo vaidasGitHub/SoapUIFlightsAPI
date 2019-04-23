@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="bb004abf-113f-4dd4-8e8a-4865063b6744" activeEnvironment="Default" name="CoBa_APITest" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="MF Flights"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="TestCase 1"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="82572fac-a9ab-40f9-88d1-19d7c9dd23e5" wsaVersion="NONE" name="FlightsServiceMethods" type="wsdl" bindingName="{HP.SOAQ.SampleApp}FlightsServiceMethods" soapVersion="1_1" anonymous="optional" definition="http://localhost:8000/Flights_SOAP?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8000/Flights_SOAP?WSDL"><con:part><con:url>http://localhost:8000/Flights_SOAP?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="Flights_Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="HP.SOAQ.SampleApp" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsdl:import namespace="HP.SOAQ.SampleApp" location="http://localhost:8000/Flights_SOAP?wsdl=wsdl0"/>
+  <wsdl:types/>
+  <wsdl:service name="Flights_Service">
+    <wsdl:port name="FlightsServiceMethods" binding="i0:FlightsServiceMethods">
+      <soap:address location="http://localhost:8000/Flights_SOAP"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8000/Flights_SOAP?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="HP.SOAQ.SampleApp" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="HP.SOAQ.SampleApp" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsdl:types>
+    <xsd:schema targetNamespace="HP.SOAQ.SampleApp/Imports">
+      <xsd:import schemaLocation="http://localhost:8000/Flights_SOAP?xsd=xsd0" namespace="HP.SOAQ.SampleApp"/>
+      <xsd:import schemaLocation="http://localhost:8000/Flights_SOAP?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://localhost:8000/Flights_SOAP?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FlightsDAL"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFlightsSoapService_CreateFlightOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFlightOrder"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_CreateFlightOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFlightOrderResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_CreateFlightOrder_StringFault_FaultMessage">
+    <wsdl:part name="detail" element="q1:string" xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_GetFlights_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFlights"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_GetFlights_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFlightsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_GetFlightOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFlightOrders"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_GetFlightOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFlightOrdersResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_UpdateFlightOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFlightOrder"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_UpdateFlightOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFlightOrderResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_DeleteFlightOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFlightOrder"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_DeleteFlightOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFlightOrderResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_DeleteAllFlightOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllFlightOrders"/>
+  </wsdl:message>
+  <wsdl:message name="IFlightsSoapService_DeleteAllFlightOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllFlightOrdersResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IFlightsSoapService">
+    <wsdl:operation name="CreateFlightOrder">
+      <wsdl:input wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/CreateFlightOrder" message="tns:IFlightsSoapService_CreateFlightOrder_InputMessage"/>
+      <wsdl:output wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/CreateFlightOrderResponse" message="tns:IFlightsSoapService_CreateFlightOrder_OutputMessage"/>
+      <wsdl:fault wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/CreateFlightOrderStringFault" name="StringFault" message="tns:IFlightsSoapService_CreateFlightOrder_StringFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlights">
+      <wsdl:input wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlights" message="tns:IFlightsSoapService_GetFlights_InputMessage"/>
+      <wsdl:output wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlightsResponse" message="tns:IFlightsSoapService_GetFlights_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlightOrders">
+      <wsdl:input wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlightOrders" message="tns:IFlightsSoapService_GetFlightOrders_InputMessage"/>
+      <wsdl:output wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlightOrdersResponse" message="tns:IFlightsSoapService_GetFlightOrders_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlightOrder">
+      <wsdl:input wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/UpdateFlightOrder" message="tns:IFlightsSoapService_UpdateFlightOrder_InputMessage"/>
+      <wsdl:output wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/UpdateFlightOrderResponse" message="tns:IFlightsSoapService_UpdateFlightOrder_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFlightOrder">
+      <wsdl:input wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteFlightOrder" message="tns:IFlightsSoapService_DeleteFlightOrder_InputMessage"/>
+      <wsdl:output wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteFlightOrderResponse" message="tns:IFlightsSoapService_DeleteFlightOrder_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllFlightOrders">
+      <wsdl:input wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteAllFlightOrders" message="tns:IFlightsSoapService_DeleteAllFlightOrders_InputMessage"/>
+      <wsdl:output wsaw:Action="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteAllFlightOrdersResponse" message="tns:IFlightsSoapService_DeleteAllFlightOrders_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FlightsServiceMethods" type="tns:IFlightsSoapService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CreateFlightOrder">
+      <soap:operation soapAction="HP.SOAQ.SampleApp/IFlightsSoapService/CreateFlightOrder" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="StringFault">
+        <soap:fault name="StringFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlights">
+      <soap:operation soapAction="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlights" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlightOrders">
+      <soap:operation soapAction="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlightOrders" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlightOrder">
+      <soap:operation soapAction="HP.SOAQ.SampleApp/IFlightsSoapService/UpdateFlightOrder" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFlightOrder">
+      <soap:operation soapAction="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteFlightOrder" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllFlightOrders">
+      <soap:operation soapAction="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteAllFlightOrders" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8000/Flights_SOAP?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="HP.SOAQ.SampleApp" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="HP.SOAQ.SampleApp">
+  <xs:import schemaLocation="http://localhost:8000/Flights_SOAP?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FlightsDAL"/>
+  <xs:element name="CreateFlightOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FlightOrder" nillable="true" type="tns:FlightOrderDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="FlightOrderDetails">
+    <xs:sequence>
+      <xs:element name="Class" type="q1:Class" xmlns:q1="http://schemas.datacontract.org/2004/07/FlightsDAL"/>
+      <xs:element name="CustomerName" nillable="true" type="xs:string"/>
+      <xs:element name="DepartureDate" type="xs:dateTime"/>
+      <xs:element name="FlightNumber" type="xs:int"/>
+      <xs:element name="NumberOfTickets" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FlightOrderDetails" nillable="true" type="tns:FlightOrderDetails"/>
+  <xs:element name="CreateFlightOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateFlightOrderResult" nillable="true" type="tns:CreatedOrderParams"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CreatedOrderParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrderNumber" type="xs:int"/>
+      <xs:element minOccurs="0" name="TotalPrice" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreatedOrderParams" nillable="true" type="tns:CreatedOrderParams"/>
+  <xs:element name="GetFlights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DepartureCity" type="q2:Cities" xmlns:q2="http://schemas.datacontract.org/2004/07/FlightsDAL"/>
+        <xs:element minOccurs="0" name="ArrivalCity" type="q3:Cities" xmlns:q3="http://schemas.datacontract.org/2004/07/FlightsDAL"/>
+        <xs:element minOccurs="0" name="FlightDate" type="xs:dateTime"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFlightsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFlightsResult" nillable="true" type="tns:ArrayOfFlight"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfFlight">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Flight" nillable="true" type="tns:Flight"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFlight" nillable="true" type="tns:ArrayOfFlight"/>
+  <xs:complexType name="Flight">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Airline" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ArrivalCity" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ArrivalTime" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="DepartureCity" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="DepartureTime" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="FlightNumber" type="xs:int"/>
+      <xs:element minOccurs="0" name="Price" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Flight" nillable="true" type="tns:Flight"/>
+  <xs:element name="GetFlightOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FlightsDetails" nillable="true" type="tns:GetFlightOrdersDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="GetFlightOrdersDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="FlightDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="OrderNumber" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetFlightOrdersDetails" nillable="true" type="tns:GetFlightOrdersDetails"/>
+  <xs:element name="GetFlightOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFlightOrdersResult" nillable="true" type="tns:ArrayOfFlightOrder"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfFlightOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FlightOrder" nillable="true" type="tns:FlightOrder"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFlightOrder" nillable="true" type="tns:ArrayOfFlightOrder"/>
+  <xs:complexType name="FlightOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Class" type="q4:Class" xmlns:q4="http://schemas.datacontract.org/2004/07/FlightsDAL"/>
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="DepartureDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="FlightNumber" type="xs:int"/>
+      <xs:element minOccurs="0" name="NumberOfTickets" type="xs:int"/>
+      <xs:element minOccurs="0" name="OrderNumber" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FlightOrder" nillable="true" type="tns:FlightOrder"/>
+  <xs:element name="UpdateFlightOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateFlightOrderDetails" nillable="true" type="tns:UpdateFlightOrderDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="UpdateFlightOrderDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Class" type="q5:Class" xmlns:q5="http://schemas.datacontract.org/2004/07/FlightsDAL"/>
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="NumberOfTickets" type="xs:int"/>
+      <xs:element name="OrderNumber" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateFlightOrderDetails" nillable="true" type="tns:UpdateFlightOrderDetails"/>
+  <xs:element name="UpdateFlightOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateFlightOrderResult" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFlightOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrderNumber" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFlightOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteFlightOrderResult" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAllFlightOrders">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAllFlightOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAllFlightOrdersResult" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:8000/Flights_SOAP?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FlightsDAL" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/FlightsDAL">
+  <xs:import schemaLocation="http://localhost:8000/Flights_SOAP?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+  <xs:simpleType name="Class">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="First">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Business">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Economy">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Class" nillable="true" type="tns:Class"/>
+  <xs:simpleType name="Cities">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None"/>
+      <xs:enumeration value="Denver"/>
+      <xs:enumeration value="Frankfurt"/>
+      <xs:enumeration value="London"/>
+      <xs:enumeration value="Los Angeles"/>
+      <xs:enumeration value="Paris"/>
+      <xs:enumeration value="Portland"/>
+      <xs:enumeration value="San Francisco"/>
+      <xs:enumeration value="Seattle"/>
+      <xs:enumeration value="Sydney"/>
+      <xs:enumeration value="Zurich"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Cities" nillable="true" type="tns:Cities"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:8000/Flights_SOAP?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint></con:endpoints><con:operation id="3af6fad3-41fb-41cc-9e73-67b3cf1a0b60" isOneWay="false" action="HP.SOAQ.SampleApp/IFlightsSoapService/CreateFlightOrder" name="CreateFlightOrder" bindingOperationName="CreateFlightOrder" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="013e5c5e-e312-4582-bdda-71b16b7ea523" name="createFlightOrderRequest"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hp:CreateFlightOrder>\r
+         <!--Optional:-->\r
+         <hp:FlightOrder>\r
+            <hp:Class>?</hp:Class>\r
+            <hp:CustomerName>?</hp:CustomerName>\r
+            <hp:DepartureDate>?</hp:DepartureDate>\r
+            <hp:FlightNumber>?</hp:FlightNumber>\r
+            <hp:NumberOfTickets>?</hp:NumberOfTickets>\r
+         </hp:FlightOrder>\r
+      </hp:CreateFlightOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/CreateFlightOrder"/></con:call></con:operation><con:operation id="701b0928-defd-44ce-88f1-2bcd28851a7c" isOneWay="false" action="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteAllFlightOrders" name="DeleteAllFlightOrders" bindingOperationName="DeleteAllFlightOrders" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="56209414-c39d-4129-a592-446e18e7a981" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hp:DeleteAllFlightOrders/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteAllFlightOrders"/></con:call></con:operation><con:operation id="0c23b05b-92ef-4dba-b095-46e8060e49ec" isOneWay="false" action="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteFlightOrder" name="DeleteFlightOrder" bindingOperationName="DeleteFlightOrder" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="38f1be81-56c6-4572-9a49-b910bbfd5b55" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hp:DeleteFlightOrder>\r
+         <!--Optional:-->\r
+         <hp:OrderNumber>?</hp:OrderNumber>\r
+      </hp:DeleteFlightOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/DeleteFlightOrder"/></con:call></con:operation><con:operation id="ae99b5c9-de50-4056-a357-9c210ce03147" isOneWay="false" action="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlightOrders" name="GetFlightOrders" bindingOperationName="GetFlightOrders" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="44cd834d-a808-4eb1-aa21-adf05ac5a911" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hp:GetFlightOrders>\r
+         <!--Optional:-->\r
+         <hp:FlightsDetails>\r
+            <!--Optional:-->\r
+            <hp:CustomerName>?</hp:CustomerName>\r
+            <!--Optional:-->\r
+            <hp:FlightDate>?</hp:FlightDate>\r
+            <!--Optional:-->\r
+            <hp:OrderNumber>?</hp:OrderNumber>\r
+         </hp:FlightsDetails>\r
+      </hp:GetFlightOrders>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlightOrders"/></con:call></con:operation><con:operation id="65ab2049-4d9c-4d92-8064-5ca14f7d39f6" isOneWay="false" action="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlights" name="GetFlights" bindingOperationName="GetFlights" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8f551a9c-5e70-40b3-b8e7-c416aaa356b7" name="getFlightRequest"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hp:GetFlights>\r
+         <!--Optional:-->\r
+         <hp:DepartureCity>?</hp:DepartureCity>\r
+         <!--Optional:-->\r
+         <hp:ArrivalCity>?</hp:ArrivalCity>\r
+         <!--Optional:-->\r
+         <hp:FlightDate>?</hp:FlightDate>\r
+      </hp:GetFlights>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlights"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="a0b123fb-08c8-4a9f-b71b-49ae0f3f06c0" isOneWay="false" action="HP.SOAQ.SampleApp/IFlightsSoapService/UpdateFlightOrder" name="UpdateFlightOrder" bindingOperationName="UpdateFlightOrder" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0dbc3855-54c1-417c-b684-e3f70666f08c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hp:UpdateFlightOrder>\r
+         <!--Optional:-->\r
+         <hp:UpdateFlightOrderDetails>\r
+            <!--Optional:-->\r
+            <hp:Class>?</hp:Class>\r
+            <!--Optional:-->\r
+            <hp:CustomerName>?</hp:CustomerName>\r
+            <!--Optional:-->\r
+            <hp:NumberOfTickets>?</hp:NumberOfTickets>\r
+            <hp:OrderNumber>?</hp:OrderNumber>\r
+         </hp:UpdateFlightOrderDetails>\r
+      </hp:UpdateFlightOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/UpdateFlightOrder"/></con:call></con:operation></con:interface><con:testSuite id="a76cc134-af33-433d-a9e4-11cb32aa3aaa" name="MF Flights"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="07b54437-749a-4c02-99b8-7cdf4aee7dd8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SOAP" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="0a75ae8c-6ddc-4192-b684-3f048744d36c"><con:settings/><con:config><script>import com.eviware.soapui.support.GroovyUtils;
+import com.eviware.soapui.support.XmlHolder;
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext;
+//----------------------------------------------------------------------------------------------------------------------------------
+//declare variables getFlightRequest
+testRunner.testCase.setPropertyValue( "departureCity", "Frankfurt" );
+testRunner.testCase.setPropertyValue( "arrivalCity", "Denver" );
+testRunner.testCase.setPropertyValue( "flightDate", "2019-04-11" );
+def propDepartureCity = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "departureCity" );
+def propArrivalCity = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "arrivalCity" );
+def propFlightDate = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "flightDate" );
+def propFlightNumberToUse;
+//declare variables createFlightOrderRequest
+testRunner.testCase.setPropertyValue( "class", "Business" );
+testRunner.testCase.setPropertyValue( "customerName", "profi.com AG" );
+testRunner.testCase.setPropertyValue( "departureDate", propFlightDate );
+testRunner.testCase.setPropertyValue( "flightNumber", "" );
+testRunner.testCase.setPropertyValue( "numberOfTickets", "1" );
+def propClass = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "class" );
+def propCustomerName = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "customerName" );
+def propDepartureDate = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "departureDate" );
+def propFlightNumber = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "flightNumber" );
+def propNumberOfTickets = testRunner.testCase.getTestStepByName( "TestDataVariables" ).getPropertyValue( "numberOfTickets" );
+def propOrderNumber;
+def propTotalPrice;
+//----------------------------------------------------------------------------------------------------------------------------------
+//prepare request getFlightRequest
+def req_getFlightRequest = testRunner.testCase.getTestStepByName( "getFlightRequest" ).getPropertyValue( "Request" );
+
+ def xmlSend = new XmlHolder( req_getFlightRequest );
+ xmlSend.setNodeValue( "//hp:GetFlights/hp:DepartureCity", propDepartureCity );
+ xmlSend.setNodeValue( "//hp:GetFlights/hp:ArrivalCity", propArrivalCity );
+ xmlSend.setNodeValue( "//hp:GetFlights/hp:FlightDate", propFlightDate );
+ def setRequest = xmlSend.getXml();
+ //send request
+ testRunner.testCase.getTestStepByName( "getFlightRequest" ).setPropertyValue( "Request", setRequest );
+ testRunner.runTestStepByName( "getFlightRequest" );
+//----------------------------------------------------------------------------------------------------------------------------------
+//prepare response getFlightRequest
+def res_getFlightRequest = testRunner.testCase.getTestStepByName( "getFlightRequest" ).getPropertyValue( "Response" );
+
+ def xmlVerify = new XmlHolder( res_getFlightRequest );
+ xmlVerify.namespaces["ns"] = "HP.SOAQ.SampleApp";
+ 
+ for ( item in xmlVerify.getNodeValues( "//ns:GetFlightsResponse/ns:GetFlightsResult/ns:Flight//ns:Price" ) ) {
+  	def strPropPrice = item;	
+ 	def intPropPrice = Double.parseDouble( strPropPrice );
+ 	def propFlightNumberTransfer = xmlVerify.getNodeValue( "//ns:FlightNumber" );
+ 	//log.info( strPropPrice );
+ 	//log.info( propFlightNumberTransfer );
+
+ 	if( intPropPrice > 105 &amp;&amp; intPropPrice &lt; 130 ){
+ 		propFlightNumber = propFlightNumberTransfer;
+ 		log.info( "Flight number is " + propFlightNumber + " with single price of " + strPropPrice);
+ 	}
+ }
+ //validate response status
+ def testStepStatus = testRunner.runTestStepByName( "getFlightRequest" );
+ def testStepResult = testStepStatus.getStatus().toString();
+ if( testStepResult == "OK" ){ log.info( "Test passed." ); }
+ else{ log.info( "Test failed." ); }
+ //validate flight number
+ assert( propFlightNumber == "18310" );
+//----------------------------------------------------------------------------------------------------------------------------------
+//prepare request createFlightOrderRequest
+def req_createFlightOrderRequest = testRunner.testCase.getTestStepByName( "createFlightOrderRequest" ).getPropertyValue( "Request" );
+
+ def xmlSend2 = new XmlHolder( req_createFlightOrderRequest );
+ xmlSend2.setNodeValue( "//hp:GetFlights/hp:Class", propClass );
+ xmlSend2.setNodeValue( "//hp:GetFlights/hp:CustomerName", propCustomerName );
+ xmlSend2.setNodeValue( "//hp:GetFlights/hp:DepartureDate", propDepartureDate );
+ xmlSend2.setNodeValue( "//hp:GetFlights/hp:FlightNumber", propFlightNumber );
+ xmlSend2.setNodeValue( "//hp:GetFlights/hp:NumberOfTickets", propNumberOfTickets );
+ def setRequest2 = xmlSend2.getXml();
+ //send request
+ testRunner.testCase.getTestStepByName( "createFlightOrderRequest" ).setPropertyValue( "Request", setRequest2 );
+ testRunner.runTestStepByName( "createFlightOrderRequest" );
+//----------------------------------------------------------------------------------------------------------------------------------
+//prepare response createFlightOrderRequest
+def res_createFlightOrderRequest = testRunner.testCase.getTestStepByName( "createFlightOrderRequest" ).getPropertyValue( "Response" );
+
+ def xmlVerify2 = new XmlHolder( res_createFlightOrderRequest );
+ xmlVerify2.namespaces["ns"] = "HP.SOAQ.SampleApp"
+ propOrderNumber = xmlVerify2.getNodeValue( "//ns:OrderNumber" );
+ propTotalPrice = xmlVerify2.getNodeValue( "//ns:TotalPrice" );
+ log.info( "Order number is " + propOrderNumber + " with total price of " + propTotalPrice);
+ //validate response status
+ def testStepStatus2 = testRunner.runTestStepByName( "createFlightOrderRequest" );
+ def testStepResult2 = testStepStatus.getStatus().toString();
+ if( testStepResult2 == "OK" ){ log.info( "Test passed." ); }
+ else{ log.info( "Test failed." ); }
+ //validate flight price
+ assert( propTotalPrice == "246" );</script></con:config></con:testStep><con:testStep type="properties" name="TestDataVariables" id="1b02e0eb-7b43-40f8-8445-66f5665119e1"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>departureCity</con:name><con:value>Frankfurt</con:value></con:property><con:property><con:name>arrivalCity</con:name><con:value>Denver</con:value></con:property><con:property><con:name>flightDate</con:name><con:value>2019-04-11</con:value></con:property><con:property><con:name>flightNumber</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="request" id="307e5ab0-9d2b-44ea-9de1-144649cb5741" name="getFlightRequest"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FlightsServiceMethods</con:interface><con:operation>GetFlights</con:operation><con:request name="getFlightRequest" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="f16fc778-8cdf-4f18-b158-1515afd97068"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hp:GetFlights>
+         <!--Optional:-->
+         <hp:DepartureCity>Frankfurt</hp:DepartureCity>
+         <!--Optional:-->
+         <hp:ArrivalCity>Denver</hp:ArrivalCity>
+         <!--Optional:-->
+         <hp:FlightDate>2019-04-11</hp:FlightDate>
+      </hp:GetFlights>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="88e02968-5e9b-489b-a423-548a24a22690" name="SOAP Response"/><con:assertion type="XQuery Match" id="d3605d1a-0bc7-44a7-aa4e-a56a9e9c419d" name="XQuery Match"><con:configuration><path>declare namespace ns1='HP.SOAQ.SampleApp';
+declare namespace x = '';
+
+&lt;Result>
+{
+for $x in //ns1:GetFlightsResponse/ns1:GetFlightsResult/ns1:Flight
+return &lt;Price>{data($x/ns1:Price)}&lt;/Price>
+}
+&lt;/Result></path><content><![CDATA[<Result>
+  <Price>123</Price>
+  <Price>100.2</Price>
+  <Price>100.2</Price>
+  <Price>161.8</Price>
+  <Price>162.3</Price>
+  <Price>161.6</Price>
+  <Price>163.8</Price>
+</Result>
+
+
+
+]]></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9a0a14a2-68db-4d4c-b95a-f6d893add47e" name="Script Assertion"><con:configuration><scriptText>//Define Groovy Utils and holder for validating the XML reponse content
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def holder = groovyUtils.getXmlHolder(messageExchange.responseContent)
+
+//Define the NameSpace
+holder.namespaces["ns1"] = "HP.SOAQ.SampleApp"
+
+//print the value of the conversion rate in the Output pane
+for ( item in holder.getDomNodes )
+{
+	//Get the Value of the Node 'Price' and assign to a variable
+	def price = holder.getNodeValue( "//ns1:Price" )
+	log.info "Flight price is " + price
+
+	//Comparing the value to print 'Pass' or 'Fail'
+	if( price &lt;= "122" )
+	{
+		log.info "Pass"
+	}
+	else
+	{ 
+		log.info "fail"
+	}
+}
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/GetFlights"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="FlightNumberTransfer" id="89553b99-0c4b-492b-a15e-74f615841bff"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>FlightNumber_Transfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>getFlightRequest</con:sourceStep><con:sourcePath>declare namespace mfFlights = 'HP.SOAQ.SampleApp';
+//mfFlights:FlightNumber</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>createFlightOrderRequest</con:targetStep><con:targetPath>declare namespace mfFlights = 'HP.SOAQ.SampleApp';
+//mfFlights:FlightNumber</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="549106f3-9664-4561-93ce-0ed07375c9a6" name="createFlightOrderRequest"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>FlightsServiceMethods</con:interface><con:operation>CreateFlightOrder</con:operation><con:request name="createFlightOrderRequest" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="a8cf0f50-1773-44a8-8419-e19b2344aaee"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8000/Flights_SOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hp="HP.SOAQ.SampleApp">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hp:CreateFlightOrder>
+         <!--Optional:-->
+         <hp:FlightOrder>
+            <hp:Class>Business</hp:Class>
+            <hp:CustomerName>profi.com AG</hp:CustomerName>
+            <hp:DepartureDate>2019-04-11</hp:DepartureDate>
+            <hp:FlightNumber>18310</hp:FlightNumber>
+            <hp:NumberOfTickets>1</hp:NumberOfTickets>
+         </hp:FlightOrder>
+      </hp:CreateFlightOrder>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f4cfce4d-b8f4-48be-b850-86daf5622a91" name="SOAP Response"/><con:assertion type="Simple Contains" id="c044f427-ac45-431c-b4f5-d4f42cfcc3c2" name="Contains"><con:configuration><token>246</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="HP.SOAQ.SampleApp/IFlightsSoapService/CreateFlightOrder"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>departureCity</con:name><con:value>Frankfurt</con:value></con:property><con:property><con:name>arrivalCity</con:name><con:value>Denver</con:value></con:property><con:property><con:name>flightDate</con:name><con:value>2019-04-11</con:value></con:property><con:property><con:name>class</con:name><con:value>Business</con:value></con:property><con:property><con:name>customerName</con:name><con:value>profi.com AG</con:value></con:property><con:property><con:name>departureDate</con:name><con:value>2019-04-11</con:value></con:property><con:property><con:name>flightNumber</con:name><con:value/></con:property><con:property><con:name>numberOfTickets</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

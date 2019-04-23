@@ -2,23 +2,24 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9959" started-at="2019-04-04T12:14:14Z" finished-at="2019-04-04T12:14:24Z">
+  <suite name="Default suite" duration-ms="6341" started-at="2019-04-17T13:28:47Z" finished-at="2019-04-17T13:28:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9959" started-at="2019-04-04T12:14:14Z" finished-at="2019-04-04T12:14:24Z">
+    <test name="Default test" duration-ms="6341" started-at="2019-04-17T13:28:47Z" finished-at="2019-04-17T13:28:54Z">
       <class name="SOAP.testRunner">
-        <test-method status="FAIL" signature="SoapTest()[pri:0, instance:SOAP.testRunner@4909b8da]" name="SoapTest" duration-ms="9917" started-at="2019-04-04T14:14:14Z" finished-at="2019-04-04T14:14:24Z">
+        <test-method status="FAIL" signature="SoapTest()[pri:0, instance:SOAP.testRunner@4909b8da]" name="SoapTest" duration-ms="6326" started-at="2019-04-17T15:28:47Z" finished-at="2019-04-17T15:28:54Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [FINISHED] but found [FINISHED]]]>
+              <![CDATA[expected [FAILED] but found [FINISHED]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [FINISHED] but found [FINISHED]
+              <![CDATA[java.lang.AssertionError: expected [FAILED] but found [FINISHED]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:179)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
 	at SOAP.testRunner.SoapTest(testRunner.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
